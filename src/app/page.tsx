@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "HNO Stimm- & Hörzentrum Stuttgart | Stimme · Hören · Pädaudiologie",
@@ -9,38 +10,53 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-24">
-      
+
       {/* HERO */}
-      <section className="max-w-3xl mb-32">
-        <p className="text-xs uppercase tracking-[0.25em] text-gray-400 mb-6">
-          Fachärztliche HNO · Stimme · Hören
-        </p>
+      <section className="grid md:grid-cols-2 gap-16 items-center mb-32">
+        
+        {/* Text */}
+        <div>
+          <p className="text-xs uppercase tracking-[0.25em] text-gray-400 mb-6">
+            Fachärztliche HNO · Stimme · Hören
+          </p>
 
-        <h1 className="text-4xl md:text-5xl font-medium leading-tight text-[#1F3D3A] mb-8">
-          HNO Stimm- & Hörzentrum<br />
-          Stuttgart
-        </h1>
+          <h1 className="text-4xl md:text-5xl font-medium leading-tight text-[#1F3D3A] mb-8">
+            HNO Stimm- & Hörzentrum<br />
+            Stuttgart
+          </h1>
 
-        <p className="text-base md:text-lg leading-relaxed text-[#5F6F73] mb-10">
-          Präzise Hals-Nasen-Ohren-Medizin mit spezialisierten Schwerpunkten
-          in der Phoniatrie, Pädaudiologie sowie der modernen Hör- und
-          Stimm­diagnostik.
-        </p>
+          <p className="text-base md:text-lg leading-relaxed text-[#5F6F73] mb-10">
+            Präzise Hals-Nasen-Ohren-Medizin mit spezialisierten Schwerpunkten
+            in der Phoniatrie, Pädaudiologie sowie der modernen Hör- und
+            Stimmdiagnostik.
+          </p>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="/termin"
-            className="inline-block rounded-md bg-[#1F3D3A] px-6 py-3 text-sm font-medium text-white hover:bg-[#16302E] transition"
-          >
-            Termin vereinbaren
-          </a>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/termin"
+              className="inline-block rounded-md bg-[#1F3D3A] px-6 py-3 text-sm font-medium text-white hover:bg-[#16302E] transition"
+            >
+              Termin vereinbaren
+            </a>
 
-          <a
-            href="/online-services"
-            className="inline-block rounded-md border border-[#1F3D3A] px-6 py-3 text-sm font-medium text-[#1F3D3A] hover:bg-[#1F3D3A] hover:text-white transition"
-          >
-            Online-Services
-          </a>
+            <a
+              href="/online-services"
+              className="inline-block rounded-md border border-[#1F3D3A] px-6 py-3 text-sm font-medium text-[#1F3D3A] hover:bg-[#1F3D3A] hover:text-white transition"
+            >
+              Online-Services
+            </a>
+          </div>
+        </div>
+
+        {/* Hero Bild */}
+        <div className="relative w-full h-[420px] rounded-lg overflow-hidden">
+          <Image
+            src="/hero.webp"
+            alt="Moderne medizinische Architektur – ruhige Atmosphäre"
+            fill
+            priority
+            className="object-cover"
+          />
         </div>
       </section>
 
@@ -68,7 +84,7 @@ export default function HomePage() {
           <p className="text-[#5F6F73] leading-relaxed">
             Die Praxis ist bewusst klar strukturiert. Jeder Schwerpunkt steht
             für eine differenzierte Diagnostik, nachvollziehbare Befund­
-            interpretation und individuell abgestimmte Empfehlungen.
+            einordnung und individuell abgestimmte Empfehlungen.
           </p>
         </div>
 
@@ -115,7 +131,7 @@ export default function HomePage() {
             </h3>
             <p className="text-sm text-[#5F6F73] leading-relaxed mb-4">
               Abklärung von Stimm-, Sprech- und Schluckstörungen, insbesondere
-              bei beruflicher Stimm­belastung.
+              bei beruflicher Stimmbelastung.
             </p>
             <a
               href="/leistungen/phoniatrie-stimme"
