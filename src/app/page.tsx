@@ -1,9 +1,11 @@
-export default function Home() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <main style={{ padding: 40, fontFamily: "Arial" }}>
-      <h1>HNO Stuttgart</h1>
-      <p>Website wird gerade aufgebaut.</p>
-      <p>Terminvereinbarung und Chat folgen.</p>
-    </main>
+    <html lang="de">
+      <body>{children}</body>
+    </html>
   );
 }
