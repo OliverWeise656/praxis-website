@@ -1,11 +1,8 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Page() {
   return (
-    <html lang="de">
-      <body>{children}</body>
-    </html>
+    <main style={{ padding: 40 }}>
+      <h1>HNO Stuttgart</h1>
+      <p>Die neue Website wird gerade aufgebaut.</p>
+    </main>
   );
 }
