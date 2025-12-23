@@ -11,7 +11,7 @@ export default function HomePage() {
     <main className="max-w-6xl mx-auto px-6 py-24">
       
       {/* HERO */}
-      <section className="max-w-3xl mb-28">
+      <section className="max-w-3xl mb-32">
         <p className="text-xs uppercase tracking-[0.25em] text-gray-400 mb-6">
           Fachärztliche HNO · Stimme · Hören
         </p>
@@ -45,7 +45,7 @@ export default function HomePage() {
       </section>
 
       {/* EINLEITUNG */}
-      <section className="prose max-w-3xl">
+      <section className="prose max-w-3xl mb-32">
         <p>
           Das <strong>HNO Stimm- & Hörzentrum Stuttgart</strong> verbindet
           klassische Hals-Nasen-Ohren-Heilkunde mit spezialisierten
@@ -57,6 +57,75 @@ export default function HomePage() {
           Untersuchung, verständliche Einordnung der Befunde und individuelle,
           maßvolle Empfehlungen – ohne Zeitdruck und ohne unnötige Maßnahmen.
         </p>
+      </section>
+
+      {/* LEISTUNGEN ÜBERSICHT */}
+      <section className="mb-32">
+        <div className="max-w-3xl mb-16">
+          <h2 className="text-2xl font-medium text-[#1F3D3A] mb-4">
+            Medizinische Schwerpunkte
+          </h2>
+          <p className="text-[#5F6F73] leading-relaxed">
+            Die Praxis ist bewusst klar strukturiert. Jeder Schwerpunkt steht
+            für eine differenzierte Diagnostik, nachvollziehbare Befund­
+            interpretation und individuell abgestimmte Empfehlungen.
+          </p>
+        </div>
+
+        <div className="grid gap-16 md:grid-cols-3">
+          
+          {/* HNO allgemein */}
+          <div>
+            <h3 className="text-lg font-medium text-[#1F3D3A] mb-3">
+              HNO allgemein
+            </h3>
+            <p className="text-sm text-[#5F6F73] leading-relaxed mb-4">
+              Diagnostik und Behandlung von Erkrankungen des Ohres, der Nase
+              und des Halses – leitlinienorientiert und individuell angepasst.
+            </p>
+            <a
+              href="/leistungen/hno-allgemein"
+              className="text-sm font-medium text-[#1F3D3A]"
+            >
+              Mehr erfahren →
+            </a>
+          </div>
+
+          {/* Pädaudiologie */}
+          <div>
+            <h3 className="text-lg font-medium text-[#1F3D3A] mb-3">
+              Pädaudiologie
+            </h3>
+            <p className="text-sm text-[#5F6F73] leading-relaxed mb-4">
+              Hör- und Sprachdiagnostik im Kindesalter, inklusive differenzierter
+              Abklärung bei unklarem Hörverhalten oder sprachlicher Entwicklung.
+            </p>
+            <a
+              href="/leistungen/paedaudiologie"
+              className="text-sm font-medium text-[#1F3D3A]"
+            >
+              Mehr erfahren →
+            </a>
+          </div>
+
+          {/* Phoniatrie */}
+          <div>
+            <h3 className="text-lg font-medium text-[#1F3D3A] mb-3">
+              Phoniatrie / Stimme
+            </h3>
+            <p className="text-sm text-[#5F6F73] leading-relaxed mb-4">
+              Abklärung von Stimm-, Sprech- und Schluckstörungen, insbesondere
+              bei beruflicher Stimm­belastung.
+            </p>
+            <a
+              href="/leistungen/phoniatrie-stimme"
+              className="text-sm font-medium text-[#1F3D3A]"
+            >
+              Mehr erfahren →
+            </a>
+          </div>
+
+        </div>
       </section>
 
     </main>
